@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+h3 {
+    margin: 20px 0;
+}
+
+hr {
+    margin: 20px 0;
+}
+
+.ash {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.rs {
+    display: flex;
+    justify-content: space-around;
+    flex: 1;
+}
+
+.as, .hw, .in, .gv {
+    margin-right: 20px;
+}
+
+.va {
+    text-align: center;
+    border: 1px solid rgb(69, 242, 230);
+    background-color: rgb(69, 242, 230);
+    color: rgb(252, 252, 252);
+}
+
+.choose {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+.free, .standard, .enterprise {
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.free {
+    background-color: rgb(174, 178, 220);
+}
+
+.standard {
+    background-color: rgb(69, 242, 230);
+    color: white;
+}
+
+.enterprise {
+    background-color: rgb(174, 178, 220);
+}
+
+button {
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+}
+
+.a, .i {
+    background-color: rgb(69, 242, 230);
+    color: rgb(252, 252, 252);
+}
+
+.w {
+    background-color: rgb(252, 252, 252);
+    color: rgb(69, 242, 230);
+    border: 1px solid rgb(69, 242, 230);
+}
+
+.n, .h, .v, .ion {
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.n, .v {
+    background-color: rgb(174, 178, 220);
+    border: 1px solid rgb(33, 33, 36);
+}
+
+.h, .ion {
+    background-color: rgb(69, 242, 230);
+    border: 1px solid rgb(252, 252, 252);
+}
+
+.ion {
+    color: rgb(211, 198, 20);
+    background-color: rgb(252, 252, 252);
+}
+
+@media (max-width: 768px) {
+    .ash {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .rs {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .choose {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .free, .standard, .enterprise {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .rs span, .rs button {
+        margin-bottom: 10px;
+    }
+}
